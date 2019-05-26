@@ -12,6 +12,9 @@
         </div>
         <div id='register' class="bloque">
             <h3>Register</h3>
+            <?php if (!empty($_GET)) { ?>
+                <p class="alerta">Registro exitoso</p>
+            <?php }?>
             <form action="registro.php" method='post'>
                 <label for="name">Name</label>
                 <input type="text" name='name' />

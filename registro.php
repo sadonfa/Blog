@@ -6,7 +6,13 @@ $last = $_POST['lastname'];
 $mail = $_POST['mail'];
 $pass = $_POST['pass'];
 
-$sql = "INSERT INTO usuarios(id, nombre, apellidos, email, pass, fecha) VALUES (NULL, '$name', '$last', '$mail', '$pass', '2019-05-25' ) ";
+$sql = "INSERT INTO usuarios(id, nombre, apellidos, email, pass, fecha)
+     VALUES (NULL, '$name', '$last', '$mail', '$pass', CURDATE() ) ";
 
-var_dump(mysqli_query($db, $sql));
+$query = mysqli_query($db, $sql);
 
+if ($query) {
+    header("Location:index.php?registro=1");
+}else {
+    header("Location:index.php?registro=0");
+}

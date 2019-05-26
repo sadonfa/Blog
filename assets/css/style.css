@@ -156,6 +156,20 @@ body{
     margin-bottom: 15px;
 }
 
+.alerta{
+    background: rgb(54, 179, 5);
+    color: white;
+    margin-bottom: 17px;
+    padding: 7px 0px 7px 7px;
+}
+
+.alerta-error{
+    background: rgb(216, 6, 6);
+    color: white;
+    margin-bottom: 17px;
+    padding: 7px 0px 7px 7px;
+}
+
 label,
 input[type="text"],
 input[type="email"],
