@@ -14,5 +14,5 @@ $query = mysqli_query($db, $sql);
 if ($query) {
     header("Location:index.php?registro=1");
 }else {
-    header("Location:index.php?registro=0");
+    echo "Error: " . mysqli_error();
 }
