@@ -11,17 +11,17 @@
             </form>
         </div>
         <div id='register' class="bloque">
-            <h3>Registrate</h3>
+            <h3>Register</h3>
             <form action="registro.php" method='post'>
-                <label for="nombre">Nombre</label>
-                <input type="text" name='nombre' />
-                <label for="apellido">Apellido</label>
-                <input type="text" name='apellido' />
-                <label for="usuario">Usuario</label>
-                <input type="text" name='usuario' />
-                <label for="pass">Clave</label>
+                <label for="name">Name</label>
+                <input type="text" name='name' />
+                <label for="lastname">Lastname</label>
+                <input type="text" name='lastname' />
+                <label for="mail">Email</label>
+                <input type="email" name='mail' />
+                <label for="pass">Password</label>
                 <input type="password" name='pass' />
-                <input type="submit" value="Registrar">
+                <input type="submit" value="Register">
             </form>
         </div>
     </aside>
